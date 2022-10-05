@@ -1,0 +1,106 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+body {
+  background-color: antiquewhite;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+  margin: 0.3em 0;
+}
+
+/* Main Styles */
+h1 {
+  font-size: 1.8rem;
+}
+p {
+  font-size: 1.25rem;
+  margin-top: 0.5em;
+}
+/* navigation */
+.BooksNav {
+  display: flex;
+  font-size: 1.3rem;
+  align-items: center;
+  justify-content: center;
+}
+.BooksNav li {
+  margin: 1em 0.9em;
+  cursor: pointer;
+  background-color: #deffd5;
+  padding: 0.3rem;
+  border-radius: 0.25rem;
+}
+.hr-div {
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+}
+.book-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: flex-start; */
+  width: 80%;
+  margin: 1em auto;
+  font-size: 1.3rem;
+}
+Section {
+  background-color: aquamarine;
+  height: 80vh;
+  width: 80%;
+  margin: 0 auto;
+  border-bottom-left-radius: 1.5rem;
+  border-top-left-radius: 0.5rem;
+  /* border-top-right-radius: 1.5rem; */
+}
+small {
+  position: relative;
+  top: 4em;
+}
+
+/* MEdia Queries */
+@media screen and (max-width: 790px) {
+  Section {
+    width: 90%;
+  }
+  .BooksNav {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 620px) {
+  .book-list {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 560px) {
+  .BooksNav {
+    font-size: 1rem;
+    margin: 1em 0.35em;
+  }
+}
+@media screen and (max-width: 420px) {
+  .book-list {
+    font-size: 1rem;
+  }
+  .BooksNav {
+    font-size: 0.859rem;
+  }
+  .BooksNav li {
+    height: 2.3em;
+  }
+  Section {
+    margin-top: -1rem;
+    height: 98vh;
+  }
+}
+@media screen and (max-width: 350px) {
+  Section {
+    width: 100%;
+  }
+}
